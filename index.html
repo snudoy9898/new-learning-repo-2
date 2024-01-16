@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Learning</title>
+
     <style>
       .container {
         border: 2px solid salmon;
@@ -35,7 +36,7 @@
         /* flex-direction: column; */
         /* flex-direction: column-reverse; */
         /* flex-direction: row; */
-        /* flex-direction: row-reverse; */ 
+        /* flex-direction: row-reverse; */
 
         /* flex-wrap: wrap; */
         /* flex-wrap: nowrap; */
@@ -47,6 +48,31 @@
         width: 100px;
         height: 100px;
       }
+
+      /* Form.html */
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .login-form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .login-form input{
+        margin-top: 20px;
+      }
+      .login-form-container{
+        display: flex;
+        justify-content: center;
+      }
+
+
     </style>
   </head>
   <body>
@@ -68,5 +94,29 @@
       <div class="box">Box-9</div>
       <div class="box">Box-10</div>
     </div>
+
+    <!-- Form.html -->
+
+    <h2>Form</h2>
+
+    <nav>
+      <div>
+        <a href="">Home</a>
+        <a href="">Profile</a>
+        <a href="">Blog</a>
+        <a href="">About</a>
+      </div>
+      <a href="">Login</a>
+    </nav>
+
+    <section class="login-form-container">
+      <form class="login-form">
+        <h3>Please Login</h3>
+        <input type="email" name="" id="" placeholder="Your email" required>
+        <input type="password" name="" id="" placeholder="Your password" required>
+        <input type="submit" value="Login" >
+      </form>
+
+    </section>
   </body>
 </html>
